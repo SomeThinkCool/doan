@@ -1,0 +1,223 @@
+/* Reset cơ bản */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Phông chữ + background */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: url('https://i.pinimg.com/736x/3b/5e/aa/3b5eaafb3fc9f4aac96c94c75d18a0dc.jpg') no-repeat center center fixed;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+/* Container chính */
+.dashboard-container {
+    background-color: #ffffff;
+    padding: 30px 40px;
+    border-radius: 16px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    width: 95%;
+    max-width: 1000px;
+    text-align: center;
+}
+
+/* Tiêu đề và thông tin người dùng */
+.dashboard-container h1 {
+    font-size: 28px;
+    color: #2c3e50;
+    margin-bottom: 10px;
+}
+
+.dashboard-container p {
+    font-size: 18px;
+    color: #555;
+    margin-bottom: 25px;
+}
+
+/* Tiêu đề phụ */
+.dashboard-container h2 {
+    font-size: 24px;
+    margin: 30px 0 20px;
+    color: #1e88e5;
+}
+
+/* Bảng lịch sử đơn hàng */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 30px;
+}
+
+table thead th {
+    background-color: #1e88e5;
+    color: white;
+    padding: 14px;
+    font-size: 16px;
+}
+
+table td {
+    padding: 12px;
+    font-size: 15px;
+    border: 1px solid #e0e0e0;
+}
+
+table tbody tr:nth-child(even) {
+    background-color: #f8f8f8;
+}
+
+table tbody tr:hover {
+    background-color: #f1f1f1;
+}
+
+table a {
+    color: #1e88e5;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+table a:hover {
+    text-decoration: underline;
+}
+
+/* Nút hành động */
+.dashboard-container .actions {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+.dashboard-container .actions a {
+    font-size: 16px;
+    color: white;
+    background-color: #e74c3c;
+    padding: 10px 22px;
+    border-radius: 6px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.dashboard-container .actions a:nth-child(1) {
+    background-color: #2ecc71;
+}
+
+.dashboard-container .actions a:hover {
+    opacity: 0.9;
+}
+
+/* Container cá nhân */
+#profile-display, form.update-form {
+    max-width: 420px;
+    margin: 20px auto;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 8px rgba(0,0,0,0.1);
+    background-color: #fff;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Hiển thị thông tin cá nhân */
+#profile-display p {
+    font-size: 1.1rem;
+    margin: 12px 0;
+    color: #333;
+}
+
+#profile-display button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #007BFF; /* màu xanh bootstrap */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: 600;
+    transition: background-color 0.3s ease;
+}
+
+#profile-display button:hover {
+    background-color: #0056b3;
+}
+
+/* Form cập nhật thông tin */
+form.update-form label {
+    display: block;
+    margin-top: 15px;
+    font-weight: 600;
+    color: #444;
+}
+
+form.update-form input[type="text"],
+form.update-form input[type="email"] {
+    width: 100%;
+    padding: 10px;
+    margin-top: 6px;
+    border: 1.5px solid #ccc;
+    border-radius: 6px;
+    font-size: 1rem;
+    transition: border-color 0.3s ease;
+}
+
+form.update-form input[type="text"]:focus,
+form.update-form input[type="email"]:focus {
+    border-color: #007BFF;
+    outline: none;
+}
+
+/* Nút trong form */
+form.update-form button {
+    padding: 10px 18px;
+    margin-top: 20px;
+    border-radius: 5px;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    border: none;
+    transition: background-color 0.3s ease;
+}
+
+form.update-form button[type="submit"] {
+    background-color: #28a745; /* màu xanh lá */
+    color: white;
+    margin-right: 12px;
+}
+
+form.update-form button[type="submit"]:hover {
+    background-color: #1e7e34;
+}
+
+form.update-form button[type="button"] {
+    background-color: #dc3545; /* màu đỏ */
+    color: white;
+}
+
+form.update-form button[type="button"]:hover {
+    background-color: #a71d2a;
+}
+
+/* Responsive */
+@media screen and (max-width: 480px) {
+    #profile-display, form.update-form {
+        margin: 15px;
+        padding: 15px;
+    }
+
+    form.update-form input[type="text"],
+    form.update-form input[type="email"] {
+        font-size: 0.9rem;
+    }
+
+    form.update-form button {
+        width: 48%;
+        font-size: 0.9rem;
+        margin-top: 12px;
+    }
+}
+

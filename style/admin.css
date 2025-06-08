@@ -1,0 +1,171 @@
+/* admin.css */
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding: 20px;
+    background-color: #eef2f5;
+    color: #333;
+}
+
+h2, h3 {
+    color: #2c3e50;
+    margin-bottom: 10px;
+}
+
+a {
+    text-decoration: none;
+    color: #007bff;
+    font-weight: 500;
+}
+
+a:hover {
+    color: #0056b3;
+    text-decoration: underline;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    background: #fff;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+}
+
+th, td {
+    padding: 12px 15px;
+    border-bottom: 1px solid #e0e0e0;
+    text-align: left;
+    font-size: 14px;
+}
+
+th {
+    background-color: #f7f9fb;
+    font-weight: bold;
+    color: #444;
+}
+
+tr:hover {
+    background-color: #f1f1f1;
+}
+
+.action-links a {
+    margin-right: 10px;
+    color: #444;
+    background-color: #eaeaea;
+    padding: 6px 10px;
+    border-radius: 4px;
+    font-size: 13px;
+    transition: background-color 0.2s;
+}
+
+.action-links a:hover {
+    background-color: #ccc;
+}
+
+img.product-thumb {
+    width: 80px;
+    height: auto;
+    border-radius: 6px;
+    box-shadow: 0 1px 5px rgba(0, 0, 0, 0.1);
+}
+
+.top-links {
+    margin-bottom: 15px;
+    font-size: 15px;
+}
+
+.top-links a {
+    margin-right: 15px;
+    color: #007bff;
+    transition: color 0.2s;
+}
+
+.top-links a:hover {
+    color: #0056b3;
+}
+
+/* Thêm kiểu cho form tìm kiếm */
+.search-form {
+    margin: 20px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.search-form input[type="text"] {
+    padding: 8px 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+    width: 250px;
+    transition: border-color 0.3s ease-in-out;
+}
+
+.search-form input[type="text"]:focus {
+    border-color: #007bff;
+    outline: none;
+}
+
+.search-form button {
+    padding: 8px 15px;
+    margin-left: 10px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 14px;
+    cursor: pointer;
+    transition: background-color 0.2s ease-in-out;
+}
+
+.search-form button:hover {
+    background-color: #0056b3;
+}
+
+.search-form input[type="text"]::placeholder {
+    color: #bbb;
+}
+
+.search-form button:focus {
+    outline: none;
+}
+/* CSS cho form lọc */
+.filter-form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 0;
+}
+
+.filter-form .filter-select,
+.filter-form .filter-input {
+    padding: 8px 15px;
+    margin-right: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+.filter-form .filter-select:focus,
+.filter-form .filter-input:focus {
+    border-color: #007bff;
+    outline: none;
+}
+
+.filter-form button {
+    padding: 8px 15px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 14px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.filter-form button:hover {
+    background-color: #0056b3;
+}
+

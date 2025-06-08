@@ -1,0 +1,136 @@
+/* === CSS CHO TRANG TÌM KIẾM (search.php) === */
+a{
+    color:#000;
+    text-decoration-line: none;
+}
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .main-body {
+    width: 80%;
+    margin: auto;
+    padding: 30px 0;
+  }
+  
+  .main-body h2 {
+    margin-bottom: 25px;
+    font-size: 24px;
+    color: #333;
+  }
+  
+  /* Grid hiển thị sản phẩm */
+  .product-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: flex-start;
+  }
+  
+  /* Card sản phẩm */
+  .promo-card {
+    background: #fff;
+    border-radius: 10px;
+    overflow: hidden;
+    color: #000;
+    padding: 10px;
+    width: 250px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    transition: transform 0.3s ease;
+    height: 350px;
+  }
+  
+  .promo-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 15px rgba(0,0,0,0.15);
+  }
+  
+  .promo-card img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 6px;
+  }
+  
+  /* Thông tin sản phẩm */
+  .promo-info {
+    padding: 10px 0;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+  }
+  
+  .promo-info h4 {
+    font-size: 16px;
+    font-weight: bold;
+    margin: 5px 0;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    flex-grow: 1;
+  }
+  
+  /* Giá sản phẩm */
+  .price-box {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 10px;
+    flex-wrap: wrap;
+  }
+  
+  .new-price {
+    font-size: 16px;
+    font-weight: bold;
+    color: red;
+  }
+  
+  .old-price {
+    font-size: 14px;
+    color: gray;
+    text-decoration: line-through;
+  }
+  
+  .discount {
+    background-color: red;
+    color: white;
+    padding: 2px 6px;
+    border-radius: 4px;
+    font-size: 12px;
+  }
+  
+  /* Nút thêm vào giỏ */
+  .add-to-cart {
+    background-color: #001f3f;
+    color: white;
+    padding: 8px 12px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    width: 100%;
+    justify-content: center;
+  }
+  
+  .add-to-cart:hover {
+    background-color: #003366;
+  }
+  
+  .add-to-cart i {
+    font-size: 16px;
+  }
+  
+  /* Nếu không có sản phẩm */
+  .main-body p {
+    font-style: italic;
+    color: #555;
+  }
+  
